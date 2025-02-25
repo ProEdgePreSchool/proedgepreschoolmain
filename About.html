@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+<!-- Mirrored from html-templates.evonicmedia.com/kinderdot/About.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Feb 2025 11:17:17 GMT -->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Kinderdot</title>
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="assets/images/fav_icon.svg" type="image/x-icon" />
+    <!-- faremwork of css -->
+    <link rel="stylesheet" href="assets/css/bootstrap-lib/bootstrap.min.css" />
+    <!-- style sheet of css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Responsive sheet of css -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- fonts awsome icon link  -->
+    <link rel="stylesheet" href="assets/font-awesome-lib/icon/font-awesome.min.css" />
+    <!-- slick-slider link css -->
+    <link rel="stylesheet" href="assets/css/slick.min.css" />
+    <!-- animation of css -->
+    <link rel="stylesheet" href="assets/css/aos.css" />
+</head>
+
+<body>
+
+    <div class="site-wrapper">
+        <!-- ======== 1.1. Header section ======== -->
+        <header data-aos="fade-down">
+            <nav class="navbar navbar-expand-lg container py-3">
+                <div class="container-fluid">
+                    <!-- site logo -->
+                    <a class="nav-logo p-0" href="index.html">
+                        <figure><img src="assets/images/Logo.svg" alt="logo" /></figure>
+                    </a>
+                    <!-- navigation button  -->
+                    <div class="d-flex gap-md-3">
+                        <button class="open-aside" onclick="if (!window.__cfRLUnblockHandlers) return false; open_aside()" type="button" data-cf-modified-3252e1dea78aeef0117f8995-="">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <!-- navigation bar manu  -->
+                        <div class="d-flex justify-content-end gap-xl-4 gap-lg-3">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul
+                                    class="navbar-nav d-flex justify-content-center align-items-center gap-lg-3 gap-md-2 gap-sm-2 gap-2 mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="Classes.html">Classes</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="Programs.html">Programs</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="About.html">About</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a class="nav-link d-flex align-item-center gap-1" href="#">Pages<i
+                                                class="fa-sharp fa-solid fa-sort-down"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="ClassesDetail.html">Classes Detail</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="Contact.html">Contact Us</a></li>
+                                            <li>
+                                                <a class="dropdown-item" href="Testimonial.html">Testimonials</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="FAQs.html">FAQs</a></li>
+                                            <li><a class="dropdown-item" href="Team.html">Team</a></li>
+                                            <li>
+                                                <a class="dropdown-item" href="Moments.html">Moments</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="Error.html">404</a></li>
+                                            <li>
+                                                <a class="dropdown-item" href="ComingSoon.html">Coming Soon</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="#" class="hover1" id="getStartedAnchor">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--===== aside navigation slidebar =====-->
+            <aside>
+                <div id="mySidenav" class="right-sidbar">
+                    <div class="side-nav-logo d-flex justify-content-between align-items-center ps-2 pe-1 nav-logo">
+                        <figure class="navbar-brand">
+                            <a href="index.html">
+                                <img src="assets/images/Logo.svg" alt="Logo" />
+                            </a>
+                        </figure>
+                        <button class="fa-solid fa-xmark" onclick="if (!window.__cfRLUnblockHandlers) return false; close_aside()" data-cf-modified-3252e1dea78aeef0117f8995-=""></button>
+                    </div>
+                    <ul class="pt-4">
+                        <li class="nav-item">
+                            <a aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Classes.html">Classes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Programs.html">Programs</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="About.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="d-flex align-items-center justify-content-between" id="slid-btn">
+                                <button class="a-slid page-btn">Pages</button>
+                                <i class="fa-solid fa-caret-down pe-2"></i>
+                            </div>
+                            <ul id="slid-drop">
+                                <li><a href="ClassesDetail.html">Classes Detail</a></li>
+                                <li><a href="Contact.html">Contact Us</a></li>
+                                <li><a href="Testimonial.html">Testimonial</a></li>
+                                <li><a href="FAQs.html">FAQs</a></li>
+                                <li><a href="Team.html">Team</a></li>
+                                <li><a href="Moments.html">Moments</a></li>
+                                <li><a href="Error.html">404</a></li>
+                                <li><a href="ComingSoon.html">Coming Soon</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </header>
+        <!-- ======== End of 1.1. Header section ========  -->
+        <!-- ======== 2.1. Subpage_Hero section ======== -->
+        <section class="Subpage_Hero">
+            <div class="container">
+                <div class="text-lg-start text-center" data-aos="fade-up">
+                    <h1>About Us</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur. Quis sed donec quis nunc aliquet cursus mauris ut. Enim
+                        fermentum maecenas rutrum dapibus sodales quis. Pulvinar consectetur amet cursus netus at.</p>
+                </div>
+            </div>
+        </section>
+        <!-- ======== End of 2.1. Subpage_Hero section ======== -->
+        <!-- ======== End of 1.3. About section ========  -->
+        <section class="About m-0">
+            <div class="container">
+                <div class="row justify-content-between gy-md-0 gy-4">
+                    <div class="col-lg-4 col-md-5">
+                        <div class="d-flex flex-column justify-content-lg-center h-100 position-relative"
+                            data-aos="fade-up">
+                            <h2>Join a Place Where Every Student Should Be</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur. Quis sed donec quis nunc aliquet cursus mauris
+                                ut.
+                                Enim fermentum maecenas rutrum dapibus sodales quis. Pulvinar consectetur amet cursus
+                                netus
+                                at.</p>
+                            <div class="d-flex flex-column gap-lg-4 gap-3 mb-lg-5 mt-lg-3">
+                                <div
+                                    class="d-flex gap-lg-3 gap-2 flex-md-row flex-column align-items-lg-start align-items-center">
+                                    <figure class="rounded-circle">
+                                        <img src="assets/images/About/Learning.webp" alt="Learning">
+                                    </figure>
+                                    <div>
+                                        <h6>Best Learning</h6>
+                                        <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex gap-lg-3 gap-2 flex-md-row flex-column align-items-lg-start align-items-center">
+                                    <figure class="rounded-circle">
+                                        <img src="assets/images/About/Food.webp" alt="Food">
+                                    </figure>
+                                    <div>
+                                        <h6>Nutritious Food</h6>
+                                        <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pb-0">
+                                <a href="Contact.html" class="hover1">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-7">
+                        <div
+                            class="d-flex position-relative gap-lg-4 gap-3 align-items-center h-100 flex-sm-row flex-column">
+                            <div class="d-flex flex-column gap-lg-4 gap-3 w-100 align-items-end h-100 ps-md-0 ps-sm-3">
+                                <figure class="w-100" data-aos="flip-left">
+                                    <img class="w-100" src="assets/images/About/About_img.webp" alt="About_Img">
+                                </figure>
+                                <figure class="w-100" data-aos="flip-left">
+                                    <img class="w-100" src="assets/images/About/about_img2.webp" alt="About_Img">
+                                </figure>
+                            </div>
+                            <figure class="mt-lg-5 mt-md-5 pt-lg-5 pt-md-5 w-75" data-aos="flip-left">
+                                <img class="w-100" src="assets/images/About/about_img3.webp" alt="About_Img">
+                            </figure>
+                            <div><img class="bounce-slow" src="assets/images/icon/baloons.svg" alt="baloon"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======== End of 1.3. About section ========  -->
+        <!-- ======== 2.2. Stats section ======== -->
+        <section class="Stats">
+            <div class="container">
+                <div class="text-center" data-aos="fade-up">
+                    <h5>We Are in Numbers</h5>
+                    <div class="d-flex justify-content-center align-items-center flex-md-row flex-column">
+                        <div class="d-flex justify-content-center align-items-center text-center flex-column">
+                            <h2><span class="number" data-final-value="10"></span>k+</h2>
+                            <p>Years of Transformative Learning</p>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-center align-items-center text-center flex-column">
+                            <h2><span class="number" data-final-value="500"></span>k+</h2>
+                            <p>Happy Students and Growing</p>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-center align-items-center text-center flex-column">
+                            <h2><span class="number" data-final-value="20"></span>k+</h2>
+                            <p>Passionate and Certified Educators</p>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-center align-items-center text-center flex-column">
+                            <h2><span class="number" data-final-value="50"></span>k+</h2>
+                            <p>Prestigious Awards for Excellence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======== End of 2.2. Stats section ======== -->
+        <!-- ======== 2.3. Mission section ======== -->
+        <section class="Mission">
+            <div class="container">
+                <div class="row flex-md-row flex-column-reverse gy-md-0 gy-4">
+                    <div class="col-lg-6 col-md-6">
+                        <figure class="w-100 h-100" data-aos="zoom-in-up">
+                            <img class="w-100 h-100" src="assets/images/About/mission_img.webp" alt="mission_img">
+                        </figure>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="d-flex flex-column justify-content-between h-100 gap-4">
+                            <div class="text-center h-50 d-flex flex-column justify-content-center"
+                                data-aos="flip-left">
+                                <h3>Mission</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur. Ipsum amet adipiscing sit diam id amet
+                                    feugiat
+                                    feugiat. In aliquam fringilla vel tincidunt sapien integer. Massa ut ultrices nam
+                                    donec.
+                                    Erat dui lorem lacus morbi vel dignissim. Donec sed tincidunt ultrices habitant erat
+                                    proin condimentum.</p>
+                            </div>
+                            <div class="text-center h-50  d-flex flex-column justify-content-center"
+                                data-aos="flip-left">
+                                <h3>Vision</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur. Ipsum amet adipiscing sit diam id amet
+                                    feugiat
+                                    feugiat. In aliquam fringilla vel tincidunt sapien integer. Massa ut ultrices nam
+                                    donec.
+                                    Erat dui lorem lacus morbi vel dignissim. Donec sed tincidunt ultrices habitant erat
+                                    proin condimentum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======== End of 2.3. Mission section ======== -->
+        <!-- ======== 1.7. Learning section ========  -->
+        <section class="Learning pt-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6">
+                        <div class="d-flex flex-column" data-aos="fade-up">
+                            <div class="text-md-start text-center">
+                                <h1>Play-Based Learning</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur. Quis sed donec quis nunc aliquet cursus
+                                    mauris
+                                    ut. Enim fermentum maecenas rutrum dapibus sodales quis.</p>
+                            </div>
+                            <div class="d-flex flex-column gap-4">
+                                <div class="d-flex gap-lg-3">
+                                    <figure class="rounded-circle d-flex justify-content-center align-items-center">
+                                        <img src="assets/images/icon/Clipboard.svg" alt="Clipboard">
+                                    </figure>
+                                    <div>
+                                        <h6>Reading & Writing</h6>
+                                        <p class="pt-1">Lorem Ipsum is simply dummy text of the printing.</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-lg-3">
+                                    <figure class="rounded-circle d-flex justify-content-center align-items-center">
+                                        <img src="assets/images/icon/SchoolBell.svg" alt="SchoolBell">
+                                    </figure>
+                                    <div>
+                                        <h6>Events & Party</h6>
+                                        <p class="pt-1">Lorem Ipsum is simply dummy text of the printing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-lg-5 mt-4">
+                                <a href="Programs.html" class="hover1">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-6">
+                        <div class="position-relative d-flex justify-content-md-end justify-content-center">
+                            <figure>
+                                <img class="rounded-circle w-100" src="assets/images/About/bookOnHead.webp"
+                                    alt="bookOnHead" data-aos="zoom-in-up">
+                            </figure>
+                            <div>
+                                <div>
+                                    <img class="position-absolute bounce-slow"
+                                        src="assets/images/About/learning_Plane.webp" alt="plane">
+                                </div>
+                                <div>
+                                    <img class="position-absolute rotate-animation"
+                                        src="assets/images/About/turtle.webp" alt="turtle">
+                                </div>
+                                <div>
+                                    <img class="position-absolute bounce-slow"
+                                        src="assets/images/icon/learning_wand.svg" alt="magicWand">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======== End of 1.7. Learning section ========  -->
+        <!-- ======== 1.11. ChooseUs section ========  -->
+        <section class="ChooseUs">
+            <div class="container position-relative">
+                <hr>
+                <div class="row flex-md-row flex-column-reverse gy-md-0 gy-4">
+                    <div class="col-lg-6 col-md-6">
+                        <figure data-aos="zoom-in-up">
+                            <img class="w-100" src="assets/images/About/chooseUs.webp" alt="chooseUs">
+                        </figure>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="d-flex flex-column ps-lg-4 mt-lg-4 mt-md-3">
+                            <div class="text-md-start text-center" data-aos="fade-up">
+                                <h2>Practice Based Learning</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur. Quis sed donec quis nunc aliquet cursus
+                                    mauris
+                                    ut. Enim fermentum maecenas rutrum dapibus sodales quis.
+                                </p>
+                            </div>
+                            <div class="d-flex flex-column gap-4">
+                                <div class="d-flex gap-lg-3 align-items-center" data-aos="fade-up">
+                                    <figure class="rounded-circle d-flex justify-content-center align-items-center">
+                                        <img src="assets/images/icon/lab.svg" alt="lab">
+                                    </figure>
+                                    <div>
+                                        <h6>Science Based Experiments</h6>
+                                        <p class="pt-1">Lorem Ipsum is simply dummy text of the printing.</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-lg-3 align-items-center mt-lg-2" data-aos="fade-up">
+                                    <figure class="rounded-circle d-flex justify-content-center align-items-center">
+                                        <img src="assets/images/icon/Ruler.svg" alt="Ruler">
+                                    </figure>
+                                    <div>
+                                        <h6>Mathematics and Experiments</h6>
+                                        <p class="pt-1">Lorem Ipsum is simply dummy text of the printing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-lg-5 mt-4" data-aos="fade-up">
+                                <a href="Contact.html" class="hover1">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======== End of 1.11. ChooseUs section ========  -->
+        <!-- ======== 1.8. Teachers section ========  -->
+        <section class="Teachers pt-0">
+            <div class="container">
+                <div class="d-flex justify-content-center align-items-center text-center flex-column mx-auto"
+                    data-aos="fade-up">
+                    <h2>Experienced Teachers</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. Quis sed donec quis nunc aliquet cursus mauris ut. Enim
+                        fermentum maecenas rutrum dapibus sodales quis.</p>
+                </div>
+                <div class="row gy-sm-0 gy-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="position-relative overflow-hidden" data-aos="flip-left">
+                            <figure>
+                                <img class="rounded-circle w-100" src="assets/images/About/teacher_1.webp"
+                                    alt="teacher_1">
+                            </figure>
+                            <div
+                                class="position-absolute text-center h-100 w-100 flex-column align-items-center justify-content-center">
+                                <h3>Diyana</h3>
+                                <p>CEO</p>
+                                <div class="d-flex justify-content-center gap-2 align-items-center">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="position-relative overflow-hidden" data-aos="flip-left">
+                            <figure>
+                                <img class="rounded-circle w-100" src="assets/images/About/teacher_2.webp"
+                                    alt="teacher_2">
+                            </figure>
+                            <div
+                                class="position-absolute text-center h-100 w-100 flex-column align-items-center justify-content-center">
+                                <h3>Jhon</h3>
+                                <p>Teacher</p>
+                                <div class="d-flex justify-content-center gap-2 align-items-center">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="position-relative overflow-hidden" data-aos="flip-left">
+                            <figure>
+                                <img class="rounded-circle w-100" src="assets/images/About/teacher_3.webp"
+                                    alt="teacher_3">
+                            </figure>
+                            <div
+                                class="position-absolute text-center h-100 w-100 flex-column align-items-center justify-content-center">
+                                <h3>Watson</h3>
+                                <p>Professor</p>
+                                <div class="d-flex justify-content-center gap-2 align-items-center">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center" data-aos="fade-up">
+                    <a href="Team.html" class="hover1">View All Teachers</a>
+                </div>
+            </div>
+        </section>
+        <!-- ======== End of 1.8. Teachers section ========  -->
+        <!-- ======== 1.15. footer section ========  -->
+        <footer>
+            <div class="container">
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                    <figure>
+                        <a href="index.html">
+                            <img src="assets/images/footer_logo.svg" alt="footer_logo">
+                        </a>
+                    </figure>
+                    <ul class="d-flex justify-content-center align-items-center flex-md-nowrap flex-wrap">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About us</a></li>
+                        <li><a href="Programs.html">Programs</a></li>
+                        <li><a href="Classes.html">Classes</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                    <hr>
+                    <div class="d-flex gap-lg-3 justify-content-center align-items-center">
+                        <h6>Opening Hours</h6>
+                        <hr>
+                        <p>Monday - Friday</p>
+                        <hr>
+                        <p>08:00 AM - 05:00 PM</p>
+                    </div>
+                    <div class="d-flex justify-content-md-center align-items-md-center flex-md-row flex-column">
+                        <a href="#">
+                            <div class="d-flex justify-content-md-center align-items-center gap-lg-4 gap-3">
+                                <figure><i class="fa fa-home d-flex justify-content-center align-items-center"></i>
+                                </figure>
+                                <div>
+                                    <h6>Company Name</h6>
+                                    <p class="pt-lg-1 pt-md-2">Plaza XYZ Street, XYZ City. XYZ </p>
+                                </div>
+                            </div>
+                        </a>
+                        <hr>
+                        <a href="#">
+                            <div class="d-flex justify-content-md-center align-items-center gap-lg-4 gap-3">
+                                <figure><i class="fa fa-envelope d-flex justify-content-center align-items-center"></i>
+                                </figure>
+                                <div>
+                                    <h6>Email Address</h6>
+                                    <p class="pt-lg-1 pt-md-2"><span class="__cf_email__" data-cfemail="6d1402181f030c00082d08000c0401430e0200">[email&#160;protected]</span> </p>
+                                </div>
+                            </div>
+                        </a>
+                        <hr>
+                        <a href="#">
+                            <div class="d-flex justify-content-md-center align-items-center gap-lg-4 gap-3">
+                                <figure><i class="fa fa-phone d-flex justify-content-center align-items-center"></i>
+                                </figure>
+                                <div>
+                                    <h6>Phone Number</h6>
+                                    <p class="pt-lg-1 pt-md-2">123-4567-890</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <hr class="mb-0">
+                    <div
+                        class="d-flex justify-content-center align-items-center w-100 flex-sm-row flex-column text-center">
+                        <p>Copyright &copy; <span id="year"></span> KinderDot By Evonicmedia. All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- scroll to top  -->
+            <div class="scrollToTop">
+                <div class="arrowUp">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </div>
+                <div class="water">
+                    <svg viewBox="0 0 560 20" class="water_wave water_wave_back">
+                        <use xlink:href="#wave"></use>
+                    </svg>
+                    <svg viewBox="0 0 560 20" class="water_wave water_wave_front">
+                        <use xlink:href="#wave"></use>
+                    </svg>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 560 20" style="display: none;">
+                        <symbol id="wave">
+                            <path
+                                d="M420,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C514,6.5,518,4.7,528.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H420z">
+                            </path>
+                            <path
+                                d="M420,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C326,6.5,322,4.7,311.5,2.7C304.3,1.4,293.6-0.1,280,0c0,0,0,0,0,0v20H420z">
+                            </path>
+                            <path
+                                d="M140,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C234,6.5,238,4.7,248.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H140z">
+                            </path>
+                            <path
+                                d="M140,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C46,6.5,42,4.7,31.5,2.7C24.3,1.4,13.6-0.1,0,0c0,0,0,0,0,0l0,20H140z">
+                            </path>
+                        </symbol>
+                    </svg>
+                </div>
+            </div>
+        </footer>
+        <!-- ======== End of 1.15. footer section ========  -->
+    </div>
+    <!-- bootstrap min javascript -->
+    <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/javascript-lib/bootstrap.min.js" type="3252e1dea78aeef0117f8995-text/javascript"></script>
+    <!-- j Query -->
+    <script src="assets/js/jquery.js" type="3252e1dea78aeef0117f8995-text/javascript"></script>
+    <!-- slick slider js -->
+    <script src="assets/js/slick.min.js" type="3252e1dea78aeef0117f8995-text/javascript"></script>
+    <!-- main javascript -->
+    <script src="assets/js/custom.js" type="3252e1dea78aeef0117f8995-text/javascript"></script>
+    <!-- animation from javascript -->
+    <script src="assets/js/aos.js" type="3252e1dea78aeef0117f8995-text/javascript"></script>
+<script src="../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="3252e1dea78aeef0117f8995-|49" defer></script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'91774943dea1fe8c',t:'MTc0MDQ4MjIxNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='../cdn-cgi/challenge-platform/h/b/scripts/jsd/b0e4a89976ce/maind41d.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"91774943dea1fe8c","version":"2025.1.0","r":1,"serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"afef85246d6f4aa98a1a0a5c34b94c75","b":1}' crossorigin="anonymous"></script>
+</body>
+
+
+<!-- Mirrored from html-templates.evonicmedia.com/kinderdot/About.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Feb 2025 11:17:27 GMT -->
+</html>
