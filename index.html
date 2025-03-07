@@ -20,6 +20,112 @@
   <link rel="stylesheet" href="assets/css/slick.min.css" />
   <!-- animation of css -->
   <link rel="stylesheet" href="assets/css/aos.css" />
+
+  <style>
+
+
+@media screen and (max-width: 480px) {
+    .Learning {
+        padding: 50px 0px 50px;
+    }
+}
+
+.scrollToTop {
+    display: none;
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    bottom: 107px;
+    right: 20px;
+    background-color: #1D123A;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 999;
+    transition: 0.5sease all;
+}
+
+.logo-title{
+    font-size: 20px;
+    line-height: 19px;
+    font-weight: 800;
+    font-family: "poppins", sans-serif;
+   
+}
+
+.logo-tagline{
+ 
+  color: #da1e26;
+    font-size: 11px;
+    line-height: 23px;
+    font-weight: 500;
+}
+
+footer .flex-md-row hr {
+    width: 1px;
+    height: 85px;
+    margin: 0px 40px;
+}
+
+.vl {
+  border-left: 2px solid rgb(94, 96, 94);
+  height: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 480px) {
+ 
+  .container-fluid{
+
+    padding: 0px;
+  }
+
+  .mobile-hidden{
+
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+    .About .position-absolute {
+        width: 100%;
+        bottom: 112px;
+        padding: 70px 36px 20px;
+        text-align: center;
+    }
+
+  
+}
+
+@media screen and (max-width:1399px) {
+
+  .Courses .position-relative .text-center p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+        padding-right: 0px;
+}
+
+.programs{
+
+  padding: 8px;
+  font-size: 16px;
+  color: #f98a17 !important; 
+  font-weight: 800;
+}
+
+}
+
+.instagradient {
+  background: #833ab4;
+  background: linear-gradient(
+    to right,
+    #833ab4,#fd1d1d,#fcb045
+  );
+}
+
+  </style>
 </head>
 
 <body>
@@ -29,15 +135,22 @@
     <header>
       <nav class="navbar navbar-expand-lg container py-3" data-aos="fade-down">
         <div class="container-fluid">
+          <div class="d-flex gap-md-2">
           <!-- site logo -->
           <a class="nav-logo p-0" href="index.html">
-            <figure><img  style="width:30%" src="assets/images/fav_icon-br.png" alt="logo" /></figure> 
+            <figure><img   src="assets/images/fav_icon.png" alt="logo" /></figure> 
           </a>
+
+         <div style=" align-self: center;">
+          <p class="logo-title">ProEdge Pre School </p>
+          <p class="logo-tagline">Inspiring Curiosity, Creating Brilliance </p>
+        </div>
+        </div>
           <!-- navigation button  -->
           <div class="d-flex gap-md-3">
-            <button class="open-aside" onclick="if (!window.__cfRLUnblockHandlers) return false; open_aside()" type="button" data-cf-modified-cd71bbf96e2caa5d49f2f0c8-="">
+            <!-- <button class="open-aside" onclick="if (!window.__cfRLUnblockHandlers) return false; open_aside()" type="button" data-cf-modified-cd71bbf96e2caa5d49f2f0c8-="">
               <i class="fa-solid fa-bars"></i>
-            </button>
+            </button> -->
             <!-- navigation bar manu  -->
             <div class="d-flex justify-content-end gap-xl-4 gap-lg-3">
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -47,13 +160,13 @@
                     <a class="nav-link active" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Classes</a>
+                    <a class="nav-link" href="index.html#aboutmain">About Us</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Programs</a>
+                    <a class="nav-link" href="index.html#programmain">Programs</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="index.html#contactus">Contact Us</a>
                   </li>
                   <!-- <li class="dropdown">
                     <a class="nav-link d-flex align-item-center gap-1" href="#">Pages<i
@@ -77,15 +190,15 @@
                   </li> -->
                 </ul>
               </div>
-              <div>
-                <a href="#" class="hover1" id="getStartedAnchor">Get Started</a>
+              <div style="align-self: center;">
+                <a href="tel:+919893467834" class="hover1" style="padding: 8px 30px;     border-radius: 5px;" id="getStartedAnchor"> <i class="fa-solid fa-phone"></i> +91 9893 4678 34</a>
               </div>
             </div>
           </div>
         </div>
       </nav>
       <!--===== aside navigation slidebar =====-->
-      <aside>
+      <!-- <aside>
         <div id="mySidenav" class="right-sidbar">
           <div class="side-nav-logo d-flex justify-content-between align-items-center ps-2 pe-1 nav-logo">
             <figure class="navbar-brand">
@@ -108,7 +221,7 @@
             <li class="nav-item">
               <a href="#">About</a>
             </li>
-            <!-- <li class="nav-item">
+            <li class="nav-item">
               <div class="d-flex align-items-center justify-content-between" id="slid-btn">
                 <button class="a-slid page-btn">Pages</button>
                 <i class="fa-solid fa-caret-down pe-2"></i>
@@ -123,21 +236,20 @@
                 <li><a href="Error.html">404</a></li>
                 <li><a href="ComingSoon.html">Coming Soon</a></li>
               </ul>
-            </li> -->
+            </li>
           </ul>
         </div>
-      </aside>
+      </aside> -->
     </header>
     <!-- ======== End of 1.1. Header section ========  -->
     <!-- ======== 1.2. Hero section ========  -->
     <section class="Hero">
       <div class="container">
         <div class="d-flex justify-content-center align-items-center text-center flex-column" data-aos="fade-up">
-          <h1>Better Future For Your Kids</h1>
-          <p>Lorem ipsum dolor sit amet consectetur. Quis sed donec quis nunc aliquet cursus mauris ut. Enim
-            fermentum maecenas rutrum dapibus sodales quis. Pulvinar consectetur amet cursus netus at.</p>
+          <h1>The Joy of Learning Begins Here!</h1>
+          <p>A happy and nurturing place where little minds explore, play, and grow with confidence. We encourage curiosity and creativity through engaging activities, helping children develop a love for learning.</p>
           <div>
-            <a href="#" class="hover1">Enroll now</a>
+            <a href="index.html#contactus" class="hover1">Enroll now <i class="fa fa-arrow-right-long"></i></a>
           </div>
         </div>
         <div
@@ -146,36 +258,37 @@
             <img class="position-absolute rotate-animation" src="assets/images/index/plane.webp" alt="plane">
           </figure>
           <div>
-            <div class="p-0"></div>
+            <div class="p-0 mobile-hidden"></div>
             <figure>
-              <img class="position-absolute bounce-animation" src="assets/images/index/pencils.webp" alt="pencils">
+              <img class="position-absolute bounce-animation mobile-hidden" src="assets/images/index/pencils.webp" alt="pencils">
             </figure>
           </div>
           <div class="d-flex flex-column gap-0">
             <div class="d-flex flex-column align-items-center gap-2">
-              <h2><span class="number" data-final-value="7.5"></span>k+</h2>
-              <p>Total active students</p>
+              <h2> <i  class="fa-brands fa-instagram"></i></h2>
+              <p><a style="color: #E1306C;" href="https://www.instagram.com/proedgepreschool">@proedgepreschool</a></p>
             </div>
             <hr>
             <div class="d-flex flex-column align-items-center gap-2">
-              <h2><span class="number" data-final-value="50"></span>k+</h2>
-              <p>Our Global Community</p>
+              <h2><i  class="fa-brands fa-facebook-f"></i></h2>
+              <p><a style="color: 	#1877F2;" href="https://www.facebook.com/ProEdgePreSchool">ProEdgePreSchool</a></p>
+              
             </div>
           </div>
           <div
             class="d-flex align-items-md-end justify-content-center gap-lg-3 gap-md-2 gap-3 position-relative flex-md-row flex-column mt-md-0 mt-4">
             <figure class="m-0" data-aos="zoom-in-up">
-              <img class="w-100" src="assets/images/index/Hero_img.webp" alt="HeroImg">
+              <img class="w-100" src="assets/images/index/main.png" alt="HeroImg">
             </figure>
-            <div class="position-relative" data-aos="zoom-in-up">
+            <div class="position-relative mobile-hidden" data-aos="zoom-in-up">
               <figure>
-                <img class="rounded-circle w-100" src="assets/images/index/Hero_img2.webp" alt="HeroImg2">
+                <img class="rounded-circle w-100" src="assets/images/index/main-two-remove.png" alt="HeroImg2">
               </figure>
             </div>
             <div>
-              <div class="p-0 z-1"></div>
+              <div class="p-0 z-1 mobile-hidden"></div>
               <figure>
-                <img class="position-absolute bounce-slow" src="assets/images/index/bulb.webp" alt="bulb">
+                <img class="position-absolute bounce-slow mobile-hidden" src="assets/images/index/bulb.webp" alt="bulb">
               </figure>
             </div>
             <figure>
@@ -185,26 +298,25 @@
         </div>
         <div class="d-flex mx-0 gap-lg-5 flex-md-row flex-column" data-aos="fade-up">
           <div class="d-flex flex-column gap-lg-2 justify-content-center text-md-start text-center">
-            <h5>You can find your
-              sweet home hassle free.</h5>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            <h5>The Perfect Learning Space of your Child</h5>
+            <p>A nurturing and engaging space where your child learns, grows, and thrives.
             </p>
           </div>
           <div class="d-flex gap-lg-4 gap-3 flex-sm-row flex-column">
             <div class="d-flex flex-column align-items-sm-start align-items-center">
               <figure><img src="assets/images/index/stationary.webp" alt="stationary"></figure>
-              <h6>Best Learning</h6>
-              <p>Lorem Ipsum is simply dummy text of the printing.</p>
+              <h6>Innovative Learning</h6>
+              <p>Engaging, modern teaching for impactful learning. </p>
             </div>
             <div class="d-flex flex-column align-items-sm-start align-items-center">
-              <figure><img src="assets/images/index/apple.webp" alt="apple"></figure>
-              <h6>Nutritious Food</h6>
-              <p>Lorem Ipsum is simply dummy text of the printing.</p>
+              <figure><img src="assets/images/index/dot_game.webp" alt="apple"></figure>
+              <h6>Expert Educators</h6>
+              <p>Skilled teachers nurturing every child's potential.</p>
             </div>
             <div class="d-flex flex-column align-items-sm-start align-items-center">
-              <figure><img class="w-100" src="assets/images/index/dot_game.webp" alt="dot_game"></figure>
-              <h6>Other Activities</h6>
-              <p>Lorem Ipsum is simply dummy text of the printing.</p>
+              <figure><img class="w-100" src="assets/images/index/turtle.webp" alt="dot_game"></figure>
+              <h6>Play-Based Learning</h6>
+              <p>Play-based learning that sparks curiosity and growth.</p>
             </div>
           </div>
         </div>
@@ -212,17 +324,24 @@
     </section>
     <!-- ======== End of 1.2. Hero section ========  -->
     <!-- ======== End of 1.3. About section ========  -->
-    <section class="About">
+    <section class="About" id="aboutmain">
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-4">
             <div class="d-flex flex-column justify-content-lg-center h-100 position-relative" data-aos="fade-up">
-              <h2>Join a Place Where Every Student Should Be</h2>
-              <p>Lorem ipsum dolor sit amet consectetur. Quis sed donec quis nunc aliquet cursus mauris ut.
-                Enim fermentum maecenas rutrum dapibus sodales quis. Pulvinar consectetur amet cursus netus
-                at.</p>
+              <h2>About ProEdge</h2>
+              <p style="line-height: 25px;  text-align: justify;">Welcome to ProEdge Pre School, where little steps lead to big dreams! 
+              <br>    <br> At ProEdge Pre School, we are passionate
+                about nurturing young minds through a
+                dynamic, engaging, and enriching learning
+                environment. We understand that early
+                childhood is a crucial phase in a child's
+                development, and our goal is to provide the
+                perfect blend of education, play, and
+                exploration. </span>
+                </p>
               <div>
-                <a href="#" class="hover1">About More</a>
+                <a href="index.html#contactus" class="hover1">Admission Open</a>
               </div>
               <div>
                 <img class="bounce-slow" src="assets/images/icon/kite.svg" alt="kite">
@@ -232,7 +351,7 @@
           <div class="col-lg-8 col-md-8">
             <div class="d-flex position-relative" data-aos="fade-up">
               <figure class="w-100">
-                <img class="w-100" src="assets/images/index/About_img.webp" alt="About_Img">
+                <img class="w-100" src="assets/images/index/aboutus.jpg" alt="About_Img">
               </figure>
               <div class="d-flex flex-column ms-1 gap-lg-4 gap-3">
                 <div class="d-flex gap-lg-3 gap-2">
@@ -240,24 +359,22 @@
                     <img src="assets/images/index/Learning.webp" alt="Learning">
                   </figure>
                   <div>
-                    <h6>Best Learning</h6>
-                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                    <h6>Small Class Size for Individual Attention</h6>
+                    <p>Individual care in small class rooms.</p>
                   </div>
                 </div>
                 <div class="d-flex gap-lg-3 gap-2">
                   <figure class="rounded-circle">
-                    <img src="assets/images/index/Food.webp" alt="Food">
+                    <img src="assets/images/index/dot_game.webp" alt="Food">
                   </figure>
                   <div>
-                    <h6>Nutritious Food</h6>
-                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                    <h6>Play Area with Safe Equipment</h6>
+                    <p>Safe and fun play area, designed for joyful learning.</p>
                   </div>
                 </div>
               </div>
               <div class="position-absolute">
-                <p>Lorem ipsum dolor sit amet consectetur. Quis sed donec quis nunc aliquet cursus mauris
-                  ut.
-                  Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Our Learning Corners are designed to make education exciting and meaningful while helping children develop skills that will prepare them for future success.</p>
               </div>
               <div><img src="assets/images/icon/baloons.svg" alt="baloon" class="bounce-slow"></div>
             </div>
@@ -267,7 +384,7 @@
     </section>
     <!-- ======== End of 1.3. About section ========  -->
     <!-- ======== 1.4. Programs section ========  -->
-    <section class="Programs">
+    <!-- <section class="Programs">
       <div class="container">
         <div class="row gy-lg-5 gy-4">
           <div class="col-lg-3 col-md-3">
@@ -277,7 +394,7 @@
                   <img src="assets/images/icon/programs1.svg" alt="programs1">
                 </figure>
                 <div class="text-center flex-grow-1">
-                  <h5>A to Z Programs</h5>
+                  <h5>Spacious & colorful classrooms</h5>
                   <p>Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
               </div>
@@ -291,7 +408,7 @@
                   <img src="assets/images/icon/programs2.svg" alt="programs2">
                 </figure>
                 <div class="text-center flex-grow-1">
-                  <h5>Toddler Class</h5>
+                  <h5>Play area with safe equipment</h5>
                   <p>Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
                 <div class="position-absolute"></div>
@@ -321,7 +438,7 @@
                 </figure>
                 <div class="text-center flex-grow-1">
                   <h5>Nursery Class</h5>
-                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                 
                 </div>
                 <div class="position-absolute"></div>
               </div>
@@ -371,30 +488,29 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- ======== End of 1.4. Programs section ========  -->
-    <div class="Courses_Choice_bg">
+    <div class="Courses_Choice_bg" id="programmain">
       <!-- ======== 1.5. Courses section ========  -->
       <section class="Courses">
         <div class="container">
           <div class="d-flex justify-content-center align-items-center text-center flex-column mx-auto"
             data-aos="fade-up">
-            <h1>Awesome Courses For Kids</h1>
-            <p>Lorem ipsum dolor sit amet consectetur. Quis sed donec quis nunc aliquet cursus mauris ut. Enim
-              fermentum maecenas rutrum dapibus sodales quis.</p>
+            <h1>Awesome Programmes For Kids</h1>
+            <p>At <b>ProEdge</b>, we nurture young minds with fun and engaging learning experiences. Our Awesome Programmes for Kids are designed to inspire creativity, curiosity, and skill development in an exciting way!</p>
           </div>
           <div class="row Courses_Slider" data-aos="fade-up">
             <div class="col-lg-4">
               <div class="d-flex flex-column position-relative">
                 <figure>
-                  <img class="w-100" src="assets/images/slider/courses_1.webp" alt="courses_1">
+                  <img class="w-100" src="assets/images/index/programone.png" alt="courses_1">
                 </figure>
                 <div class="d-flex flex-column text-center">
-                  <h4>Drawing Class</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur. Quis sed donec quis nunc aliquet cursus mauris
-                    ut.</p>
+                  <h4>Toddler Program </h4>
+                  <p class="programs" >(1.5 - 2.5 Years)</p>
+                  <p>A safe, nurturing space for little ones to explore through play, music, movement, and social interactions.</p>
                   <div>
-                    <a href="#" class="hover3">
+                    <a href="index.html#contactus" class="hover3">
                       Join Now <i class="fa fa-arrow-right-long"></i>
                     </a>
                   </div>
@@ -402,7 +518,7 @@
                 <div class="position-absolute"></div>
               </div>
             </div>
-            <div class="col-lg-4">
+            <!-- <div class="col-lg-4">
               <div class="d-flex flex-column position-relative">
                 <figure>
                   <img class="w-100" src="assets/images/slider/courses_2.webp" alt="courses_2">
@@ -419,18 +535,18 @@
                 </div>
                 <div class="position-absolute"></div>
               </div>
-            </div>
+            </div> -->
             <div class="col-lg-4">
               <div class="d-flex flex-column position-relative">
                 <figure>
-                  <img class="w-100" src="assets/images/slider/courses_3.webp" alt="courses_3">
+                  <img class="w-100" src="assets/images/index/programthree.jpg" alt="courses_3">
                 </figure>
                 <div class="d-flex flex-column text-center">
-                  <h4>Paper Art</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur. Quis sed donec quis nunc aliquet cursus mauris
-                    ut.</p>
+                  <h4>Playgroup Program</h4>
+                  <p class="programs" >(2.5 - 3.5 Years)</p>
+                  <p >A perfect blend of structured learning and free play, encouraging children to develop early independence.</p>
                   <div>
-                    <a href="#" class="hover3">
+                    <a href="index.html#contactus" class="hover3">
                       Join Now <i class="fa fa-arrow-right-long"></i>
                     </a>
                   </div>
@@ -441,14 +557,32 @@
             <div class="col-lg-4">
               <div class="d-flex flex-column position-relative">
                 <figure>
-                  <img class="w-100" src="assets/images/slider/courses_2.webp" alt="courses_2">
+                  <img class="w-100" src="assets/images/index/playgroup.jpg" alt="courses_2">
                 </figure>
                 <div class="d-flex flex-column text-center">
-                  <h4>Number Matching</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur. Quis sed donec quis nunc aliquet cursus mauris
-                    ut.</p>
+                  <h4>Nursery Program</h4>
+                  <p class="programs" >(3.5 - 4.5 Years)</p>
+                  <p>A program designed to build early academic concepts while fostering creativity and logical thinking.</p>
                   <div>
-                    <a href="#" class="hover3">
+                    <a href="index.html#contactus" class="hover3">
+                      Join Now <i class="fa fa-arrow-right-long"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="position-absolute"></div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="d-flex flex-column position-relative">
+                <figure>
+                  <img class="w-100" src="assets/images/index/programfive.png" alt="courses_2">
+                </figure>
+                <div class="d-flex flex-column text-center">
+                  <h4>Kindergarten</h4>
+                  <p class="programs" >(4.5 - 6 Years)</p>
+                  <p>A structured and engaging curriculum that builds a strong academic foundation for formal schooling.</p>
+                  <div>
+                    <a href="index.html#contactus" class="hover3">
                       Join Now <i class="fa fa-arrow-right-long"></i>
                     </a>
                   </div>
@@ -468,19 +602,19 @@
               <div class="d-flex gap-lg-4 gap-3 w-100 position-relative">
                 <div class="d-flex flex-column gap-lg-4 gap-3 w-50">
                   <div class="d-flex flex-column text-center" data-aos="flip-left">
-                    <h2>6205+</h2>
-                    <h6>Enrolled Kids </h6>
+                    <h2>Enroll Now</h2>
+                    <h6 style="font-size: 15px;">Admission Open </h6>
                   </div>
                   <figure class="h-100" data-aos="flip-left">
-                    <img class="w-100 h-100" src="assets/images/index/choiceImg_1.webp" alt="choiceImg_1">
+                    <img class="w-100 h-100" src="assets/images/index/whychoose.png" alt="choiceImg_1">
                   </figure>
                 </div>
                 <div class="d-flex flex-column gap-lg-4 gap-3 w-50" data-aos="flip-left">
                   <figure class="h-100">
-                    <img class="w-100 h-100" src="assets/images/index/choiceImg_2.webp" alt="choiceImg_2">
+                    <img class="w-100 h-100" src="assets/images/index/whychoosethree.png" alt="choiceImg_2">
                   </figure>
                   <figure class="h-100" data-aos="flip-left">
-                    <img class="w-100 h-100" src="assets/images/index/choiceImg_3.webp" alt="choiceImg_3">
+                    <img class="w-100 h-100" src="assets/images/index/whychoosetwo.png" alt="choiceImg_3">
                   </figure>
                 </div>
                 <div data-aos="fade-up">
@@ -492,18 +626,27 @@
             <div class="col-lg-6 col-md-6">
               <div class="d-flex flex-column ps-lg-3 position-relative">
                 <div class="text-md-start" data-aos="fade-up">
-                  <h2>Why KinderDot Is The Perfect Choice</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur. Quis sed donec quis nunc aliquet cursus mauris
-                    ut. Enim fermentum maecenas rutrum dapibus sodales quis.</p>
+                  <h2>Why ProEdge Is The Perfect Choice</h2>
+                  <p>At ProEdge Pre School, we lay the foundation for a bright and successful future. Join us and give your child the best start in life!</p>
                 </div>
                 <div class="d-flex gap-md-0 gap-3">
                   <div class="d-flex flex-column align-items-md-start align-items-center" data-aos="fade-up">
                     <figure class="d-flex justify-content-center align-items-center">
-                      <img src="assets/images/icon/basketBall.svg" alt="basketBall">
+                      <img src="assets/images/icon/abc_board.svg" alt="abc_board">
                     </figure>
                     <div>
-                      <h6>Sport Activites</h6>
-                      <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                      <h6>Expert Teachers</h6>
+                      <p>Dedicated teachers nurturing every child’s growth.</p>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column align-items-md-start align-items-center" data-aos="fade-up">
+                    <figure class="d-flex justify-content-center align-items-center">
+                      <img src="assets/images/icon/basketBall.svg" alt="basketBall">
+              
+                    </figure>
+                    <div>
+                      <h6>Modern Facilities</h6>
+                      <p>Spacious rooms, interactive zones, play area.</p>
                     </div>
                   </div>
                   <div class="d-flex flex-column align-items-md-start align-items-center" data-aos="fade-up">
@@ -511,26 +654,17 @@
                       <img src="assets/images/icon/book.svg" alt="book">
                     </figure>
                     <div>
-                      <h6>Creative Lessons</h6>
-                      <p>Lorem Ipsum is simply dummy text of the printing.</p>
-                    </div>
-                  </div>
-                  <div class="d-flex flex-column align-items-md-start align-items-center" data-aos="fade-up">
-                    <figure class="d-flex justify-content-center align-items-center">
-                      <img src="assets/images/icon/abc_board.svg" alt="abc_board">
-                    </figure>
-                    <div>
-                      <h6>Easy Learning</h6>
-                      <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                      <h6>Focused Learning</h6>
+                      <p>Individual care in small class rooms.</p>
                     </div>
                   </div>
                 </div>
                 <div class="d-flex gap-lg-3 gap-2 justify-content-md-start justify-content-center" data-aos="fade-up">
                   <div>
-                    <a href="#" class="hover1">Get Started</a>
+                    <a href="index.html#contactus" class="hover1">Get Started</a>
                   </div>
                   <div>
-                    <a href="#" class="hover2">View All Programs</a>
+                    <a href="index.html#programmain" class="hover2">View All Programs</a>
                   </div>
                 </div>
                 <div>
@@ -543,18 +677,19 @@
       </section>
       <!-- ======== End of 1.6. Choice section ========  -->
     </div>
+
+  
     <!-- ======== 1.7. Learning section ========  -->
-    <section class="Learning">
+    <section class="Learning" id="gallery">
       <div class="container">
         <div class="row">
           <div class="col-lg-5 col-md-6">
             <div class="d-flex flex-column">
               <div class="text-md-start text-center" data-aos="fade-up">
-                <h1>Play-Based Learning</h1>
-                <p>Lorem ipsum dolor sit amet consectetur. Quis sed donec quis nunc aliquet cursus mauris
-                  ut. Enim fermentum maecenas rutrum dapibus sodales quis.</p>
+                <h1>Latest from Instagram</h1>
+                <p>Stay connected with us on Instagram! Explore our latest updates, insights, and behind-the-scenes moments. Follow us for exclusive content, exciting announcements, and a glimpse into our journey. Don’t miss out—engage with us and be part of the conversation!</p>
               </div>
-              <div class="d-flex flex-column gap-4">
+              <!-- <div class="d-flex flex-column gap-4">
                 <div class="d-flex gap-lg-3" data-aos="fade-up">
                   <figure class="rounded-circle d-flex justify-content-center align-items-center">
                     <img src="assets/images/icon/Clipboard.svg" alt="Clipboard">
@@ -573,37 +708,39 @@
                     <p class="pt-1">Lorem Ipsum is simply dummy text of the printing.</p>
                   </div>
                 </div>
-              </div>
-              <div class="mt-lg-5 mt-4">
-                <a href="#" class="hover1">Learn More</a>
+              </div> -->
+              <div class="mb-4">
+                <a href="https://www.instagram.com/proedgepreschool" style=" width: 256px; background: #833ab4;
+                background: linear-gradient(
+                  to right,
+                  #833ab4,#fd1d1d,#fcb045
+                );" class="hover1 ">
+                  <i  class="fa-brands fa-instagram"></i>
+                  View on Instagram</a>
               </div>
             </div>
           </div>
           <div class="col-lg-7 col-md-6">
-            <div class="position-relative d-flex justify-content-md-end justify-content-center">
+           
               <figure>
-                <img class="rounded-circle w-100" src="assets/images/index/bookOnHead.webp" alt="bookOnHead"
-                  data-aos="zoom-in-up">
+                <div>
+                  <behold-widget feed-id="wEiklGUjOqgdHWoyU0mK"></behold-widget>
+            <script>
+              (() => {
+                const d=document,s=d.createElement("script");s.type="module";
+                s.src="https://w.behold.so/widget.js";d.head.append(s);
+              })();
+            </script>
+                </div>
               </figure>
-              <div>
-                <div>
-                  <img class="position-absolute bounce-slow" src="assets/images/index/learning_Plane.webp" alt="plane">
-                </div>
-                <div>
-                  <img class="position-absolute rotate-animation" src="assets/images/index/turtle.webp" alt="turtle">
-                </div>
-                <div>
-                  <img class="position-absolute bounce-slow" src="assets/images/icon/learning_wand.svg" alt="magicWand">
-                </div>
-              </div>
-            </div>
+             
           </div>
         </div>
       </div>
-    </section>
-    <!-- ======== End of 1.7. Learning section ========  -->
+    </section> 
+    <!-- ======== End of 1.7. Learning section ======== -->
     <!-- ======== 1.8. Teachers section ========  -->
-    <section class="Teachers">
+    <!-- <section class="Teachers">
       <div class="container">
         <hr>
         <div class="d-flex justify-content-center align-items-center text-center flex-column mx-auto"
@@ -669,7 +806,7 @@
           <a href="#" class="hover1">View All Teachers</a>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- ======== End of 1.8. Teachers section ========  -->
     <div class="Courses_Choice_bg">
       <!-- ======== 1.9. Testimonial section ========  -->
@@ -680,15 +817,9 @@
             <div class="Testimonial_Slider position-relative">
               <div class="d-flex flex-column justify-content-center align-items-center">
                 <figure>
-                  <img class="rounded-circle" src="assets/images/index/Testimonial_1.html" alt="testmional1">
+                  <img class="rounded-circle" src="assets/images/index/Testimonial.jpg" alt="testmional1">
                 </figure>
-                <p>Lorem ipsum dolor sit amet consectetur. Lorem accumsan sit quis lacus varius. Lectus quis
-                  mauris
-                  amet Lorem ipsum dolor sit amet consectetur. Lorem accumsan sit quis lacus varius. Lectus
-                  quis
-                  mauris amet Lorem ipsum dolor sit amet consectetur. Lorem accumsan sit quis lacus varius.
-                  Lectus
-                  quis mauris amet </p>
+                <p>ProEdge has been a wonderful experience for our child. The nurturing environment, dedicated teachers, and interactive learning methods have helped our little one grow in confidence and curiosity. We couldn’t have asked for a better start to their education!</p>
                 <div class="d-flex gap-2 justify-content-center">
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
@@ -697,21 +828,15 @@
                   <i class="fa fa-star"></i>
                 </div>
                 <div class="d-flex flex-column">
-                  <h5>Hazel Nutt</h5>
-                  <p class="p-0">Artisan</p>
+                  <h5>Priya Sharma</h5>
+                  <p class="p-0">Student's Mother</p>
                 </div>
               </div>
               <div class="d-flex flex-column justify-content-center align-items-center">
                 <figure>
-                  <img class="rounded-circle" src="assets/images/index/teacher_1.webp" alt="testmional1">
+                  <img class="rounded-circle" src="assets/images/index/testitwo.png" alt="testmional1">
                 </figure>
-                <p>Lorem ipsum dolor sit amet consectetur. Lorem accumsan sit quis lacus varius. Lectus quis
-                  mauris
-                  amet Lorem ipsum dolor sit amet consectetur. Lorem accumsan sit quis lacus varius. Lectus
-                  quis
-                  mauris amet Lorem ipsum dolor sit amet consectetur. Lorem accumsan sit quis lacus varius.
-                  Lectus
-                  quis mauris amet </p>
+                <p>Our son Aarav absolutely loves ProEdge! The engaging activities and nurturing environment have helped him develop socially and emotionally. We are grateful to the amazing teachers!</p>
                 <div class="d-flex gap-2 justify-content-center">
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
@@ -720,8 +845,25 @@
                   <i class="fa fa-star"></i>
                 </div>
                 <div class="d-flex flex-column">
-                  <h5>Emma</h5>
-                  <p class="p-0">Freelancer</p>
+                  <h5>Vikram Iyer</h5>
+                  <p class="p-0">Student's Father</p>
+                </div>
+              </div>
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <figure>
+                  <img class="rounded-circle" src="assets/images/index/testthree.png" alt="testmional1">
+                </figure>
+                <p>Choosing ProEdge for our little one, Riya, was the best decision we made. She enjoys learning, has made great friends, and the interactive approach keeps her excited about school every day.</p>
+                <div class="d-flex gap-2 justify-content-center">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="d-flex flex-column">
+                  <h5>Pooja Verma</h5>
+                  <p class="p-0">Student's Mother</p>
                 </div>
               </div>
             </div>
@@ -733,8 +875,8 @@
                 <img class="position-absolute rotate-animation" src="assets/images/index/ball.webp" alt="ball">
               </div>
               <div>
-                <img class="position-absolute bounce-slow" src="assets/images/index/Testimonial_kite.html"
-                  alt="Testimonial_kite">
+                <!-- <img class="position-absolute bounce-slow" src="assets/images/index/Testimonial_kite.html"
+                  alt="Testimonial_kite"> -->
               </div>
             </div>
           </div>
@@ -747,26 +889,25 @@
           <div class="d-flex justify-content-center align-items-center flex-column mx-auto text-center"
             data-aos="fade-up">
             <h1>Amazing Moments</h1>
-            <p>Lorem ipsum dolor sit amet consectetur. Quis sed donec quis nunc aliquet cursus mauris ut. Enim
-              fermentum maecenas rutrum dapibus sodales quis.</p>
+            <p>At ProEdge, we celebrate every festival, achievement, and special moment with joy. Our Amazing Moments Gallery captures these cherished memories forever!</p>
           </div>
           <div class="row gx-lg-4 gx-3 gy-sm-0 gy-3">
             <div class="col-lg-4 col-sm-4">
               <div class="d-flex flex-column gap-lg-4 gap-3 h-100">
                 <div class="position-relative h-100" data-aos="flip-left">
                   <figure class="h-100">
-                    <img class="w-100 h-100" src="assets/images/index/moments_1.webp" alt="moments_1">
+                    <img class="w-100 h-100" src="assets/images/index/Cristmas.jpg" alt="moments_1">
                   </figure>
                   <div class="position-absolute justify-content-center align-items-end d-flex text-center">
-                    <h6>Loreum Ipsum Dummy Text Data</h6>
+                    <h6>Christmas Celebration </h6>
                   </div>
                 </div>
                 <div class="position-relative h-100" data-aos="flip-left">
                   <figure class="h-100">
-                    <img class="w-100 h-100" src="assets/images/index/moments_2.webp" alt="moments_2">
+                    <img class="w-100 h-100" src="assets/images/index/earth.webp" alt="moments_2">
                   </figure>
                   <div class="position-absolute justify-content-center align-items-end d-flex text-center">
-                    <h6>Loreum Ipsum Dummy Text Data</h6>
+                    <h6>Earth Day Activities</h6>
                   </div>
                 </div>
               </div>
@@ -775,10 +916,10 @@
               <div class="d-flex flex-column gap-lg-4 gap-3 h-100" data-aos="flip-left">
                 <div class="position-relative h-100">
                   <figure class="h-100">
-                    <img class="w-100 h-100" src="assets/images/index/moments_3.webp" alt="moments_3">
+                    <img class="w-100 h-100" src="assets/images/index/moments.jpg" alt="moments_3">
                   </figure>
                   <div class="position-absolute justify-content-center align-items-end d-flex text-center">
-                    <h6>Loreum Ipsum Dummy Text Data</h6>
+                    <h6>Krishna ji janmashtami Celebration</h6>
                   </div>
                 </div>
               </div>
@@ -787,32 +928,32 @@
               <div class="d-flex flex-column gap-lg-4 gap-3 h-100">
                 <div class="position-relative h-100" data-aos="flip-left">
                   <figure class="h-100">
-                    <img class="w-100 h-100" src="assets/images/index/moments_4.webp" alt="moments_4">
+                    <img class="w-100 h-100" src="assets/images/index/republicday.jpg" alt="moments_4">
                   </figure>
                   <div class="position-absolute justify-content-center align-items-end d-flex text-center">
-                    <h6>Loreum Ipsum Dummy Text Data</h6>
+                    <h6>Republic Day Activities</h6>
                   </div>
                 </div>
                 <div class="position-relative h-100" data-aos="flip-left">
                   <figure class="h-100">
-                    <img class="w-100 h-100" src="assets/images/index/moments_5.webp" alt="moments_5">
+                    <img class="w-100 h-100" src="assets/images/index/nursery-schools-kids.jpg" alt="moments_5">
                   </figure>
                   <div class="position-absolute justify-content-center align-items-end d-flex text-center">
-                    <h6>Loreum Ipsum Dummy Text Data</h6>
+                    <h6>Games Day </h6>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="d-flex justify-content-center align-items-center" data-aos="fade-up">
+          <!-- <div class="d-flex justify-content-center align-items-center" data-aos="fade-up">
             <a href="#" class="hover4">View More</a>
-          </div>
+          </div> -->
         </div>
       </section>
       <!-- ======== End of 1.10. Moments section ========  -->
     </div>
     <!-- ======== 1.11. ChooseUs section ========  -->
-    <section class="ChooseUs">
+    <!-- <section class="ChooseUs">
       <div class="container">
         <div class="row flex-md-row flex-column-reverse gy-md-0 gy-4">
           <div class="col-lg-6 col-md-6">
@@ -849,16 +990,16 @@
                 </div>
               </div>
               <div class="mt-lg-5 mt-4" data-aos="fade-up">
-                <a href="#" class="hover1">Get Started</a>
+                <a href="#" class="hover1">+91 9893 4678 34</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- ======== End of 1.11. ChooseUs section ========  -->
     <!-- ======== 1.12. Enroll section ========  -->
-    <section class="Enroll">
+    <!-- <section class="Enroll">
       <div class="container">
         <div class="d-flex justify-content-center align-items-center text-center flex-column" data-aos="fade-up">
           <h1>Nurturing Young Hearts And Minds</h1>
@@ -870,10 +1011,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- ======== End of 1.12. Enroll section ========  -->
     <!-- ======== 1.13. FAQ section ========  -->
-    <section class="FAQ">
+    <!-- <section class="FAQ">
       <div class="container">
         <div class="row justify-content-md-between flex-md-row flex-column-reverse gy-md-0 gy-4">
           <div class="col-lg-5 col-md-5">
@@ -961,10 +1102,13 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- ======== End of 1.13. FAQ section ========  -->
     <!-- ======== 1.14. Newsletter section ========  -->
-    <section class="Newsletter">
+  <div  style="margin-top: 30px;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1523.7618969363846!2d77.48442214088477!3d23.233137661381505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c4189be992cc1%3A0x19f6410421477fba!2sLORD%20BUDDHA%20HOSPITAL!5e0!3m2!1sen!2sin!4v1741336901775!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+    <section class="Newsletter" style="margin-top: 80px;">
       <div class="container">
         <div class="row flex-md-row flex-column-reverse">
           <div class="col-lg-6 col-md-6">
@@ -972,30 +1116,21 @@
               <img class="w-100" src="assets/images/index/train.webp" alt="train">
             </figure>
           </div>
-          <div class="col-lg-6 col-md-6">
+          <div id ="contactus" class="col-lg-6 col-md-6">
             <div class="d-flex flex-column text-md-start text-center" data-aos="fade-up">
-              <h2>Subscribe Our Newsletter</h2>
-              <p>Lorem ipsum dolor sit amet consectetur. Quis sed donec quis nunc aliquet cursus mauris ut.
-                Enim fermentum.</p>
-              <form class="d-flex">
-                <input type="email" placeholder="Type Your Email" required name="Newsletter_Email">
-                <button class="hover1">Subscribe</button>
-              </form>
-              <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <img src="assets/images/icon/Confirmation_1.gif" alt="submitIcon">
-                    <div>
-                      <h4>Response Submitted</h4>
-                      <h6>Your details have been successfully submitted. Thanks</h6>
-                    </div>
-                    <button type="button" class="hover2 m-auto" data-bs-dismiss="modal">Close</button>
-                  </div>
-                </div>
+              <h2>Contact Us</h2>
+              <p style="padding-bottom: 15px;">Call or WhatsApp us for admissions, courses, or any queries!</p>
+              <div class="col-lg-12 col-md-12">
+                <a href="tel:+919893467834"  > <i class="fa-solid fa-phone"></i> +91 9893 4678 34</a> <span class="vl"></span>   
+                
+                <a href="https://wa.me/+919893467834" style=" color: #075E54;">
+                  <i  class="fa-brands fa-whatsapp"></i> +91 9893 4678 34 </a>
               </div>
+             
             </div>
+             
           </div>
+          
         </div>
       </div>
     </section>
@@ -1006,15 +1141,15 @@
         <div class="d-flex justify-content-center align-items-center flex-column">
           <figure>
             <a href="index.html">
-              <img src="assets/images/fav_icon-br.png" alt="footer_logo">
+              <img style="border-radius: 11px; background: white;" src="assets/images/fav_icon-removebg.png" alt="footer_logo">
             </a>
           </figure>
           <ul class="d-flex justify-content-center align-items-center flex-md-nowrap flex-wrap">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Programs</a></li>
-            <li><a href="#">Classes</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="index.html#aboutmain">About us</a></li>
+            <li><a href="index.html#programmain">Programs</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="index.html#contactus">Contact</a></li>
           </ul>
           <hr>
           <div class="d-flex gap-lg-3 justify-content-center align-items-center">
@@ -1029,8 +1164,8 @@
               <div class="d-flex justify-content-md-center align-items-center gap-lg-4 gap-3">
                 <figure><i class="fa fa-home d-flex justify-content-center align-items-center"></i></figure>
                 <div>
-                  <h6>Company Name</h6>
-                  <p class="pt-lg-1 pt-md-2">Plaza XYZ Street, XYZ City. XYZ </p>
+                  <h6>Visit us at</h6>
+                  <p class="pt-lg-1 pt-md-2">H.NO. 85, B Sector, Awadhpuri Bhopal (M.P.) 462022</p>
                 </div>
               </div>
             </a>
@@ -1041,7 +1176,7 @@
                 </figure>
                 <div>
                   <h6>Email Address</h6>
-                  <p class="pt-lg-1 pt-md-2"><span class="__cf_email__" data-cfemail="89f0e6fcfbe7e8e4ecc9ece4e8e0e5a7eae6e4">[email&#160;protected]</span> </p>
+                  <p class="pt-lg-1 pt-md-2"><span>proedgepreschool@gmail.com</span> </p>
                 </div>
               </div>
             </a>
@@ -1052,14 +1187,14 @@
                 </figure>
                 <div>
                   <h6>Phone Number</h6>
-                  <p class="pt-lg-1 pt-md-2">123-4567-890</p>
+                  <p class="pt-lg-1 pt-md-2">+91 9893 4678 34</p>
                 </div>
               </div>
             </a>
           </div>
           <hr class="mb-0">
           <div class="d-flex justify-content-center align-items-center w-100 flex-sm-row flex-column text-center">
-            <p>Copyright &copy; <span id="year"></span> ProEdge Pre School -Inspiring Curiosity, Creating Brilliance!.</p>
+            <p>Copyright &copy; <span id="year"></span> ProEdge Pre School - Inspiring Curiosity, Creating Brilliance!</p>
           </div>
         </div>
       </div>
@@ -1094,12 +1229,14 @@
           </svg>
         </div>
       </div>
+      
     </footer>
     <!-- ======== End of 1.15. footer section ========  -->
   </div>
+  
 
   <!-- bootstrap min javascript -->
-  <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/javascript-lib/bootstrap.min.js" type="cd71bbf96e2caa5d49f2f0c8-text/javascript"></script>
+  <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/javascript-lib/bootstrap.min.js" type="cd71bbf96e2caa5d49f2f0c8-text/javascript"></script>
   <!-- j Query -->
   <script src="assets/js/jquery.js" type="cd71bbf96e2caa5d49f2f0c8-text/javascript"></script>
   <!-- slick slider js -->
@@ -1108,8 +1245,20 @@
   <script src="assets/js/custom.js" type="cd71bbf96e2caa5d49f2f0c8-text/javascript"></script>
   <!-- animation from javascript -->
   <script src="assets/js/aos.js" type="cd71bbf96e2caa5d49f2f0c8-text/javascript"></script>
-<script src="../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="cd71bbf96e2caa5d49f2f0c8-|49" defer></script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'917749295a9bfe8c',t:'MTc0MDQ4MjIxMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='../cdn-cgi/challenge-platform/h/b/scripts/jsd/b0e4a89976ce/maind41d.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"917749295a9bfe8c","version":"2025.1.0","r":1,"serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"afef85246d6f4aa98a1a0a5c34b94c75","b":1}' crossorigin="anonymous"></script>
+<script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="cd71bbf96e2caa5d49f2f0c8-|49" defer></script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'917749295a9bfe8c',t:'MTc0MDQ4MjIxMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='../cdn-cgi/challenge-platform/h/b/scripts/jsd/b0e4a89976ce/maind41d.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"917749295a9bfe8c","version":"2025.1.0","r":1,"serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"afef85246d6f4aa98a1a0a5c34b94c75","b":1}' crossorigin="anonymous"></script>
+<!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
+<!-- <script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-b19fd0fd-ce1a-4928-a0a3-0e52612619d1" data-elfsight-app-lazy></div> -->
+
+<div class="wabtn" id="wabutton">
+  <style> [wa-tooltip] { position: relative; cursor: default;  &:hover { &::before { content: attr(wa-tooltip); font-size: 16px; text-align: center; position: absolute; display: block; right: calc(0% - 100px); left: null; min-width: 200px; max-width: 200px; bottom: calc(100% + 40px); transform: translate(-50%); animation: fade-in 500ms ease; background: #00E785; border-radius: 4px; padding: 10px; color: #ffffff; z-index: 1; } } }  @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }  [wa-tooltip] {  }  @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }</style>
+  <a wa-tooltip="We are available! Click here to chat" target="_self" href="https://wa.me/919893467834?text=Hi!%20%20I%E2%80%99m%20interested%20in%20learning%20more%20about%20your%20preschool%20and%20the%20programs%20you%20offer.%20Could%20you%20please%20share%20more%20details%20about%20admissions,%20curriculum,%20and%20fees?%20Looking%20forward%20to%20your%20response.%20Thank%20you!" style=" cursor: pointer;height: auto;width: auto;padding: 10px 10px 10px 10px;position: fixed !important;color: #fff;bottom: 20px;right: 20px;;display: flex;text-decoration: none;font-size: 18px;font-weight: 600;font-family: sans-serif;align-items: center;z-index: 999999999 !important;background-color: #00E785;box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.4);border-radius: 100px;animation: pulse 2.5s ease infinite;">
+    <svg width="42" height="42" style="padding: 5px;" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1024_354)"><path d="M23.8759 4.06939C21.4959 1.68839 18.3316 0.253548 14.9723 0.0320463C11.613 -0.189455 8.28774 0.817483 5.61565 2.86535C2.94357 4.91323 1.10682 7.86244 0.447451 11.1638C-0.21192 14.4652 0.351026 17.8937 2.03146 20.8109L0.0625 28.0004L7.42006 26.0712C9.45505 27.1794 11.7353 27.7601 14.0524 27.7602H14.0583C16.8029 27.7599 19.4859 26.946 21.768 25.4212C24.0502 23.8965 25.829 21.7294 26.8798 19.1939C27.9305 16.6583 28.206 13.8682 27.6713 11.1761C27.1367 8.48406 25.8159 6.01095 23.8759 4.06939ZM14.0583 25.4169H14.0538C11.988 25.417 9.96008 24.8617 8.1825 23.8091L7.7611 23.5593L3.3945 24.704L4.56014 20.448L4.28546 20.0117C2.92594 17.8454 2.32491 15.2886 2.57684 12.7434C2.82877 10.1982 3.91938 7.80894 5.67722 5.95113C7.43506 4.09332 9.76045 2.87235 12.2878 2.48017C14.8152 2.08799 17.4013 2.54684 19.6395 3.78457C21.8776 5.02231 23.641 6.96875 24.6524 9.3179C25.6638 11.6671 25.8659 14.2857 25.2268 16.7622C24.5877 19.2387 23.1438 21.4326 21.122 22.999C19.1001 24.5655 16.6151 25.4156 14.0575 25.4157L14.0583 25.4169Z" fill="#E0E0E0"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M10.6291 7.98363C10.3723 7.41271 10.1019 7.40123 9.85771 7.39143C9.65779 7.38275 9.42903 7.38331 9.20083 7.38331C9.0271 7.3879 8.8562 7.42837 8.69887 7.5022C8.54154 7.57602 8.40119 7.68159 8.28663 7.81227C7.899 8.17929 7.59209 8.62305 7.38547 9.11526C7.17884 9.60747 7.07704 10.1373 7.08655 10.6711C7.08655 12.3578 8.31519 13.9877 8.48655 14.2164C8.65791 14.4452 10.8581 18.0169 14.3425 19.3908C17.2382 20.5327 17.8276 20.3056 18.4562 20.2485C19.0848 20.1913 20.4843 19.4194 20.7701 18.6189C21.056 17.8183 21.0557 17.1323 20.9701 16.989C20.8844 16.8456 20.6559 16.7605 20.3129 16.5889C19.9699 16.4172 18.2849 15.5879 17.9704 15.4736C17.656 15.3594 17.4275 15.3023 17.199 15.6455C16.9705 15.9888 16.3139 16.7602 16.1137 16.9895C15.9135 17.2189 15.7136 17.2471 15.3709 17.0758C14.3603 16.6729 13.4275 16.0972 12.6143 15.3745C11.8648 14.6818 11.2221 13.8819 10.7072 13.0007C10.5073 12.6579 10.6857 12.472 10.8579 12.3007C11.0119 12.1472 11.2006 11.9005 11.3722 11.7003C11.5129 11.5271 11.6282 11.3346 11.7147 11.1289C11.7603 11.0343 11.7817 10.9299 11.7768 10.825C11.7719 10.7201 11.7409 10.6182 11.6867 10.5283C11.6001 10.3566 10.9337 8.66151 10.6291 7.98363Z" fill="white"></path><path d="M23.7628 4.02445C21.4107 1.66917 18.2825 0.249336 14.9611 0.0294866C11.6397 -0.190363 8.35161 0.804769 5.70953 2.82947C3.06745 4.85417 1.25154 7.77034 0.600156 11.0346C-0.051233 14.299 0.506321 17.6888 2.16894 20.5724L0.222656 27.6808L7.49566 25.7737C9.50727 26.8692 11.7613 27.4432 14.0519 27.4434H14.0577C16.7711 27.4436 19.4235 26.6392 21.6798 25.1321C23.936 23.6249 25.6947 21.4825 26.7335 18.9759C27.7722 16.4693 28.0444 13.711 27.5157 11.0497C26.9869 8.38835 25.6809 5.94358 23.7628 4.02445ZM14.0577 25.1269H14.0547C12.0125 25.1271 10.0078 24.5782 8.25054 23.5377L7.8339 23.2907L3.51686 24.4222L4.66906 20.2143L4.39774 19.7831C3.05387 17.6415 2.4598 15.1141 2.70892 12.598C2.95804 10.082 4.03622 7.72013 5.77398 5.88366C7.51173 4.04719 9.81051 2.84028 12.3089 2.45266C14.8074 2.06505 17.3638 2.5187 19.5763 3.74232C21.7888 4.96593 23.5319 6.89011 24.5317 9.21238C25.5314 11.5346 25.7311 14.1233 25.0993 16.5714C24.4675 19.0195 23.0401 21.1883 21.0414 22.7367C19.0427 24.2851 16.5861 25.1254 14.0577 25.1255V25.1269Z" fill="white"></path></g><defs><clipPath id="clip0_1024_354"><rect width="27.8748" height="28" fill="white" transform="translate(0.0625)"></rect></clipPath></defs></svg>
+    <span class="button-text"></span>
+  </a>
+</div>
 </body>
+
 
 
 </html>
